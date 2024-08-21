@@ -1,7 +1,4 @@
-﻿using NUnit.Framework;
-using System;
-
-[TestFixture]
+﻿
 public class Sale_Tests
 {
     [SetUp]
