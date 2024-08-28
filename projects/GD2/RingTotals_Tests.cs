@@ -23,7 +23,7 @@ public class RingTotals_Tests
         int[,] input = { {5} };
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 5 };
    
@@ -36,7 +36,7 @@ public class RingTotals_Tests
         int[,] input = { { 2, 5, 7, 8, 9 } };
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 31 };
 
@@ -50,7 +50,7 @@ public class RingTotals_Tests
                          { 1,8,1 } };
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 15 };
 
@@ -67,7 +67,7 @@ public class RingTotals_Tests
                          { 5 } };
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 20 };
 
@@ -82,7 +82,7 @@ public class RingTotals_Tests
                          { 99, 43, 2, 7123, 87, 9, 0, 1 }};
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 7501, 58 };
 
@@ -99,7 +99,7 @@ public class RingTotals_Tests
                          { 1, 1, 1, 1, 1 }};
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 16, 8,1 };
 
@@ -116,7 +116,7 @@ public class RingTotals_Tests
                          { 49, 43, 67}};
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 464, 92 };
 
@@ -134,7 +134,7 @@ public class RingTotals_Tests
                          { 1, 2, 3, 4, 5, 6, 7, 8, 9 },};
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 130, 90, 50 };
 
@@ -156,7 +156,7 @@ public class RingTotals_Tests
                          { 11, 12, 68, 425, 852, 92} };
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 12224, 1362, 1456 };
 
@@ -176,7 +176,7 @@ public class RingTotals_Tests
                          { 1, 2, 3, 55, 5, 6, 7, 8, 9 },};
 
 
-        int[] actual = DG2_CH7to9.RingTotals(input);
+        int[] actual = GD2_CH7to9.RingTotals(input);
 
         int[] expected = { 302, 1027, 71, 30 };
 

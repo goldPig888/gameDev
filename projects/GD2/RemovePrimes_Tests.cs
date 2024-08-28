@@ -25,7 +25,7 @@ public class RemovePrimes_Tests
         foreach(int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = {1,4,6,8,9,10 };
         List<int> expected = new List<int>();
@@ -43,7 +43,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { 4, 6, 18, 33};
         List<int> expected = new List<int>();
@@ -61,7 +61,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { };
         List<int> expected = new List<int>();
@@ -79,7 +79,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { 12, 30, 99, 126, 205 };
         List<int> expected = new List<int>();
@@ -97,7 +97,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { 501, 654, 901 };
         List<int> expected = new List<int>();
@@ -115,7 +115,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { 148, 150,  152, 153, 154, 155, 156, 158, 159, 160 };
         List<int> expected = new List<int>();
@@ -133,7 +133,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { 6, 8, 8 };
         List<int> expected = new List<int>();
@@ -151,7 +151,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = {999, 959, 321, 201, 75, 87 };
         List<int> expected = new List<int>();
@@ -169,7 +169,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { 33, 55 };
         List<int> expected = new List<int>();
@@ -187,7 +187,7 @@ public class RemovePrimes_Tests
         foreach (int i in values)
             actual.Add(i);
 
-        DG2_CH4to6.RemovePrimes(actual);
+        GD2_CH4to6.RemovePrimes(actual);
 
         int[] resultValues = { 33, 44, 55, 77, 99, 150, 112, 9, 57, 51 };
         List<int> expected = new List<int>();

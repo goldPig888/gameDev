@@ -23,7 +23,7 @@ public class FibonacciList_Tests
         List<long> actual;
       
 
-        DG2_CH4to6.FibonacciList(1, out actual);
+        GD2_CH4to6.FibonacciList(1, out actual);
 
         long[] resultValues = { 0 };
         List<int> expected = new List<int>();
@@ -39,7 +39,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(2, out actual);
+        GD2_CH4to6.FibonacciList(2, out actual);
 
         long[] resultValues = { 0, 1 };
         List<int> expected = new List<int>();
@@ -55,7 +55,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(3, out actual);
+        GD2_CH4to6.FibonacciList(3, out actual);
 
         long[] resultValues = { 0,1,1 };
         List<int> expected = new List<int>();
@@ -71,7 +71,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(4, out actual);
+        GD2_CH4to6.FibonacciList(4, out actual);
 
         long[] resultValues = { 0,1,1,2 };
         List<int> expected = new List<int>();
@@ -87,7 +87,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(9, out actual);
+        GD2_CH4to6.FibonacciList(9, out actual);
 
         long[] resultValues = { 0,1,1,2,3,5,8,13,21 };
         List<int> expected = new List<int>();
@@ -103,7 +103,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(20, out actual);
+        GD2_CH4to6.FibonacciList(20, out actual);
 
         long[] resultValues =  { 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181 };
 
@@ -120,7 +120,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(25, out actual);
+        GD2_CH4to6.FibonacciList(25, out actual);
 
         long[] resultValues = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765,10946,17711,28657,46368 };
 
@@ -137,7 +137,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(12, out actual);
+        GD2_CH4to6.FibonacciList(12, out actual);
 
         long[] resultValues = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89};
 
@@ -154,7 +154,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(14, out actual);
+        GD2_CH4to6.FibonacciList(14, out actual);
 
         long[] resultValues = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233};
 
@@ -171,7 +171,7 @@ public class FibonacciList_Tests
         List<long> actual;
 
 
-        DG2_CH4to6.FibonacciList(23, out actual);
+        GD2_CH4to6.FibonacciList(23, out actual);
 
         long[] resultValues = { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711 };
 

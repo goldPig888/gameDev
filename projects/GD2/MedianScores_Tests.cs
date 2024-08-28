@@ -25,7 +25,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("Jack", 85), ("Joe", 85), ("Jane", 99) };
@@ -47,7 +47,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("Jack", 55), ("Jane", 55), ("Joe", 55) };
@@ -69,7 +69,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("Joe", 85), ("Tim", 87), ("Jack", 99), ("Jane", 99) };
@@ -91,7 +91,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("Jack", 73), ("Jane", 73), ("Joe", 73), ("Tim", 73) };
@@ -113,7 +113,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("F", 11), ("E", 35), ("C", 42), ("D", 42), ("B", 55), ("A", 72) }  ;
@@ -135,7 +135,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("F", 11), ("E", 35), ("D", 36), ("C", 42), ("B", 55), ("A", 72) }  ;
@@ -157,7 +157,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("A", 12), ("B", 12), ("D", 25), ("C", 98), ("E", 99), ("F", 100) };
@@ -179,7 +179,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = {  ("Banana", 34),("Apple", 67), ("Banana", 80), ("Grape", 87), ("Pear", 99) };
@@ -201,7 +201,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("Apple", 67), ("Banana", 80), ("Banana", 80), ("Grape", 80), ("Pear", 99) };
@@ -223,7 +223,7 @@ public class MedianScores_Tests
 
         actualScores.AddRange(values);
 
-        List<string> actualNames = DG2_CH4to6.MedianScores(ref actualScores);
+        List<string> actualNames = GD2_CH4to6.MedianScores(ref actualScores);
 
         List<(string, int)> expectedScores = new List<(string, int)>();
         (string, int)[] valuesR = { ("Apple", 99),("Grape", 99), ("Pear", 99), ("Banana", 100),  ("Banana", 100) };

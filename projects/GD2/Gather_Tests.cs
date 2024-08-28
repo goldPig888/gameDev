@@ -2,7 +2,7 @@
 using System;
 
 [TestFixture]
-public class Farm_Tests
+public class Gather_Tests
 {
     [SetUp]
     public void SetUp()
@@ -20,7 +20,7 @@ public class Farm_Tests
     public void Test1()
     {
         char[] farm = { '-','H'};
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 2;
        
 
@@ -31,7 +31,7 @@ public class Farm_Tests
     public void Test2()
     {
         char[] farm = { 'H' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 0;
 
 
@@ -42,7 +42,7 @@ public class Farm_Tests
     public void Test3()
     {
         char[] farm = { '-', 'F', 'H' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 6;
 
 
@@ -53,7 +53,7 @@ public class Farm_Tests
     public void Test4()
     {
         char[] farm = { 'F', 'H', 'F' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 4;
 
 
@@ -64,7 +64,7 @@ public class Farm_Tests
     public void Test5()
     {
         char[] farm = { 'H', 'F', 'F', '-' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 12;
 
 
@@ -75,7 +75,7 @@ public class Farm_Tests
     public void Test6()
     {
         char[] farm = { 'F', '-', 'H', '-', 'F', '-', '-', '-'};
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 18;
 
 
@@ -86,7 +86,7 @@ public class Farm_Tests
     public void Test7()
     {
         char[] farm = { '-', '-', 'F', 'H', 'F', '-', 'F', 'F' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 24;
 
 
@@ -97,7 +97,7 @@ public class Farm_Tests
     public void Test8()
     {
         char[] farm = { 'F', 'F', 'F', 'H', 'F', '-', 'F', 'F' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 28;
 
 
@@ -108,7 +108,7 @@ public class Farm_Tests
     public void Test9()
     {
         char[] farm = { 'F','F','-', 'H' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 10;
 
 
@@ -119,7 +119,7 @@ public class Farm_Tests
     public void Test10()
     {
         char[] farm = { 'F', 'H','F','F','F' };
-        int moves = DG2_CH1to3.Gather(farm);
+        int moves = GD2_CH1to3.Gather(farm);
         int expectedMovesl = 14;
 
 

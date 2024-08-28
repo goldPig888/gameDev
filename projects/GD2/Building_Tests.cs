@@ -25,7 +25,7 @@ public class Building_Tests
                         {false,true,false,false}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(2,2,input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(2,2,input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int,int>(0, 0));
@@ -43,7 +43,7 @@ public class Building_Tests
                         {false,true,false,false}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(1, 2, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(1, 2, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int, int>(0, 0));
@@ -64,7 +64,7 @@ public class Building_Tests
                         {false,true,false,false}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(2, 3, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(2, 3, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
 
@@ -79,7 +79,7 @@ public class Building_Tests
                         {false,true,false,false}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(3, 2, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(3, 2, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int, int>(0, 0));
@@ -94,7 +94,7 @@ public class Building_Tests
                      
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(1, 1, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(1, 1, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int, int>(0, 0));
@@ -112,7 +112,7 @@ public class Building_Tests
                            {false,false}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(3, 2, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(3, 2, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
 
@@ -129,7 +129,7 @@ public class Building_Tests
                            {false,false,false,false,true}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(2, 2, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(2, 2, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int, int>(0, 0));
@@ -150,7 +150,7 @@ public class Building_Tests
                            {false,false,false,false,true}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(3, 1, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(3, 1, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int, int>(0, 1));
@@ -174,7 +174,7 @@ public class Building_Tests
                            {false,false,false,false,true,false,false}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(3, 2, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(3, 2, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int, int>(3, 0));
@@ -194,7 +194,7 @@ public class Building_Tests
                            {false,false,false,false,true,false,false}};
 
 
-        List<Tuple<int, int>> actual = DG2_CH7to9.BuildingPlacement(4, 1, input);
+        List<Tuple<int, int>> actual = GD2_CH7to9.BuildingPlacement(4, 1, input);
 
         List<Tuple<int, int>> expected = new List<Tuple<int, int>>();
         expected.Add(new Tuple<int, int>(3, 0));

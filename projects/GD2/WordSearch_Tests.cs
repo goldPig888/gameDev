@@ -30,7 +30,7 @@ public class WordSearch_Tests
                          {'W','X','U','G','C','V','H','T','7'} };
 
 
-        Tuple<string,int,int> actual = DG2_CH7to9.FindWord("GO", input);
+        Tuple<string,int,int> actual = GD2_CH7to9.FindWord("GO", input);
 
         Tuple<string,int, int> expected = new Tuple<string, int, int>("GO",5,6);
         Assert.That(actual, Is.EqualTo(expected));
@@ -49,7 +49,7 @@ public class WordSearch_Tests
                          {'W','X','U','G','C','V','H','T','7'} };
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("STAMP", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("STAMP", input);
 
         Tuple<string, int, int> expected = new Tuple<string, int, int>("STAMP", 0, 1);
         Assert.That(actual, Is.EqualTo(expected));
@@ -68,7 +68,7 @@ public class WordSearch_Tests
                          {'W','X','U','G','C','V','H','T','7'} };
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("WASP", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("WASP", input);
 
         Tuple<string, int, int> expected = null;
         Assert.That(actual, Is.EqualTo(expected));
@@ -82,7 +82,7 @@ public class WordSearch_Tests
                          {'A','C','T'} };
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("CAT", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("CAT", input);
 
         Tuple<string, int, int> expected = new Tuple<string, int, int>("CAT",0,0);
         Assert.That(actual, Is.EqualTo(expected));
@@ -96,7 +96,7 @@ public class WordSearch_Tests
                          {'A','C','T'} };
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("ART", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("ART", input);
 
         Tuple<string, int, int> expected = new Tuple<string, int, int>("ART", 2, 0);
         Assert.That(actual, Is.EqualTo(expected));
@@ -110,7 +110,7 @@ public class WordSearch_Tests
                          {'A','C','T'} };
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("HATS", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("HATS", input);
 
         Tuple<string, int, int> expected = null;
         Assert.That(actual, Is.EqualTo(expected));
@@ -127,7 +127,7 @@ public class WordSearch_Tests
                          {'S','S','R', 'M'},};
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("PAN", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("PAN", input);
 
         Tuple<string, int, int> expected = new Tuple<string, int, int>("PAN",1,4);
         Assert.That(actual, Is.EqualTo(expected));
@@ -144,7 +144,7 @@ public class WordSearch_Tests
                          {'S','S','R', 'M'},};
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("TRAPS", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("TRAPS", input);
 
         Tuple<string, int, int> expected = new Tuple<string, int, int>("TRAPS", 1, 1);
         Assert.That(actual, Is.EqualTo(expected));
@@ -161,7 +161,7 @@ public class WordSearch_Tests
                          {'S','S','R', 'M'},};
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("ANTS", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("ANTS", input);
 
         Tuple<string, int, int> expected = null;
         Assert.That(actual, Is.EqualTo(expected));
@@ -178,7 +178,7 @@ public class WordSearch_Tests
                          {'S','S','T', 'M', 'B'} };
 
 
-        Tuple<string, int, int> actual = DG2_CH7to9.FindWord("ART", input);
+        Tuple<string, int, int> actual = GD2_CH7to9.FindWord("ART", input);
 
         Tuple<string, int, int> expected = new Tuple<string, int, int>("ART",0,3);
         Assert.That(actual, Is.EqualTo(expected));
