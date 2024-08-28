@@ -42,18 +42,5 @@
 
         }
 
-        while (right != farm.Length-1)
-        {
-            if (farm[right] == 'F')
-            {
-                steps += (right * 2);
-                farm[right] = '-';
-            }
-            right++;
-
-        }
-        return steps;
-
-
     }
 }
