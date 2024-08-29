@@ -10,37 +10,67 @@
         return (sum, sum * 1.0825f);
     }
 
-  public static (string[], string[], float, float) EvaluateScores((string, int)[] students)
+    public static (string[], string[], float, float) EvaluateScores((string, int)[] students)
     {
-        string[] all = new string[students.Length];
-        string[] pass = new string[students.Length];
+        List<string> all = new List<string>();
+        List<string> pass = new List<string>();
         float avg = 0;
 
         foreach ((string name, int score) in students)
         {
-            all.Append(name);
-            if (score >= 3) { pass.Append(name); }
+            all.Add(name);
+            if (score >= 3) { pass.Add(name); }
             avg += score;
         }
 
-        return (all, pass, all.Length / students.Length, avg);
+        return (all.ToArray(), pass.ToArray(), (float)pass.Count / all.Count, avg / all.Count);
     }
 
     public static int Gather(char[] farm)
     {
+        int homePosition = Array.IndexOf(farm, 'H');
+        List<int> foodPositions = new List<int>();
+        int steps = 0;
 
-        int left = 0, right = 0, steps = 0;
-        int start = Array.IndexOf(farm, 'H');
-
-        while (left != 0)
+        for (int i = 0; i < farm.Length; i++)
         {
-            if (farm[left] == 'F') {
-                steps += (start - left * 2);
-                farm[left] = '-';
+            if (farm[i] == 'F')
+            {
+                foodPositions.Add(i);
             }
-            left++;
-
         }
 
+        if (foodPositions.Count == 0)
+        {
+            if (farm.Length == 1)
+            {
+                return 0;
+            }
+            else
+            {
+                steps += Math.Abs(homePosition - 0) * 2;
+                steps += Math.Abs(farm.Length - 1 - homePosition);
+                return steps;
+            }
+        }
+
+        foreach (int foodPosition in foodPositions)
+        {
+            int distance = Math.Abs(foodPosition - homePosition);
+            steps += distance * 2;
+        }
+
+        if (foodPositions[foodPositions.Count - 1] != farm.Length - 1)
+        {
+            steps += (farm.Length - 1 - homePosition) * 2;
+        }
+
+        if (foodPositions[0] != 0)
+        {
+            steps += (homePosition) * 2;
+        }
+
+        return steps;
     }
+
 }
