@@ -10,6 +10,7 @@
         return (sum, sum * 1.0825f);
     }
 
+
     public static (string[], string[], float, float) EvaluateScores((string, int)[] students)
     {
         List<string> all = new List<string>();
@@ -25,6 +26,7 @@
 
         return (all.ToArray(), pass.ToArray(), (float)pass.Count / all.Count, avg / all.Count);
     }
+
 
     public static int Gather(char[] farm)
     {
