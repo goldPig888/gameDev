@@ -1,23 +1,17 @@
-﻿
-public class GD2_CH7to9
+﻿public class GD2_CH7to9
 {
-    public static List<Tuple<int, int>> BuildingPlacement(int width, int height, bool[,] grid)
+    public static int[] RingTotals(int[,] grid)
     {
-        var validPlacements = new List<Tuple<int, int>>();
-        int rows = grid.GetLength(0), cols = grid.GetLength(1);
 
-        for (int i = 0; i <= rows - height; i++)
+        for (int row = grid.GetLength(0); row >= 0; row--)
         {
-            for (int j = 0; j <= cols - width; j++)
+            for (int col = grid.GetLength(1); col >= 0; col--)
             {
-                bool isValid = true;
-                for (int h = 0; h < height && isValid; h++)
-                    for (int w = 0; w < width; w++)
-                        if (grid[i + h, j + w]) { isValid = false; break; }
-                if (isValid) validPlacements.Add(new Tuple<int, int>(j, i));
+                Console.Write(grid[row, col] + " ring : " + col);
             }
+                
+            
         }
 
-        return validPlacements;
     }
 }
