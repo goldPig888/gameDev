@@ -19,7 +19,8 @@
 
         return validPlacements;
         }
-    /*
+    
+    
 public static int[] RingTotals(int[,] grid)
     {
 
@@ -33,5 +34,6 @@ public static int[] RingTotals(int[,] grid)
             
         }
 
-    }*/
+    }
+
 }
