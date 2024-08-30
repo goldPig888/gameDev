@@ -1,4 +1,7 @@
-﻿public class GD2_CH4to6
+﻿using System;
+using System.Collections.Generic;
+
+public class GD2_CH4to6
 {
     public static void RemovePrimes(List<int> numbers)
     {
@@ -32,12 +35,35 @@
         }
         return fib;
     }
-    
-    public static List<string> MedianScores((List<(string,int)>) scores)
+
+    public static List<string> MedianScores(ref List<(string, int)> scores)
     {
-   
+        // Sort the scores first by the score in ascending order, then by student name
+        scores.Sort((a, b) =>
+        {
+            int scoreComparison = a.Item2.CompareTo(b.Item2);
+            if (scoreComparison == 0)
+            {
+                return a.Item1.CompareTo(b.Item1); // Sort by name if scores are equal
+            }
+            return scoreComparison;
+        });
 
+        // Find the median score
+        int n = scores.Count;
+        int medianScore = scores[(n - 1) / 2].Item2;
 
+        // Collect all students who have the median score
+        List<string> medianScorers = new List<string>();
+        foreach (var score in scores)
+        {
+            if (score.Item2 == medianScore)
+            {
+                medianScorers.Add(score.Item1);
+            }
+        }
+
+        return medianScorers;
     }
 
 
