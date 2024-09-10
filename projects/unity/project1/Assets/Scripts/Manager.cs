@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
-    [SerializeField] GameObject skull;
+    [SerializeField] GameObject skull1;
+    [SerializeField] Text scoreText;
+    private int score = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        skull.GetComponent<SpriteRenderer>().enabled = false;
+        skull1.GetComponent<SpriteRenderer>().enabled = false;
         
     }
 
@@ -16,5 +20,12 @@ public class Manager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AddPoints(int points)
+    {
+        score += points;
+        scoreText.text = "Score: " + points;
+
     }
 }
