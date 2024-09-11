@@ -8,6 +8,7 @@ public class Shape : MonoBehaviour
     [SerializeField] int moveTime;
     [SerializeField] GameObject manager;
     private float elaspedTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +22,16 @@ public class Shape : MonoBehaviour
         elaspedTime += 1000f * Time.deltaTime;
         if (elaspedTime >= moveTime) {
             Move();
+            manager.GetComponent<Manager>().AddDeaths();
         }
     }
 
 
     private void Move()
     {
-        gameObject.transform.position = new Vector3(UnityEngine.Random.Range(-7.5f, 7.5f), transform.position.y, transform.position.z); elaspedTime = 0;
+        gameObject.transform.position = new Vector3(UnityEngine.Random.Range(-6f, 6f), transform.position.y, transform.position.z); elaspedTime = 0;
     }
+
 
     private void OnMouseDown()
     {
