@@ -16,9 +16,8 @@ public class Manager : MonoBehaviour
         c1.transform.position = new Vector3(-3.2f, -1.99f, 0f);
         c2.transform.position = new Vector3(-3.19f, -1.19f, 0f);
         c3.transform.position = new Vector3(-3.2f, -.51f, 0f);
-        c1.transform.position = new Vector3(-3.21f, -.0448f, 0f);
-        c1.transform.position = new Vector3(-3.2f, -.5099f, 0f);
-
+        c4.transform.position = new Vector3(-3.21f, -.0448f, 0f);
+        c5.transform.position = new Vector3(-3.2f, -.5099f, 0f);
     }
 
     // Update is called once per frame
