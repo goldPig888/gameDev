@@ -5,36 +5,49 @@ using UnityEngine;
 public class Shape : MonoBehaviour
 {
     [SerializeField] int points;
-    [SerializeField] int moveTime;
+    [SerializeField] int timeToDie;
     [SerializeField] GameObject manager;
-    private float elaspedTime;
 
-    // Start is called before the first frame update
+    private float elapsedTime;
+
     void Start()
     {
-
+        elapsedTime = 0f;
     }
 
-
-    // Update is called once per frame
     void Update()
     {
-        elaspedTime += 1000f * Time.deltaTime;
-        if (elaspedTime >= moveTime) {
+        if (manager.GetComponent<Manager>().IsGameOver())
+            return;
+
+        elapsedTime += 1000f * Time.deltaTime;
+
+        if (elapsedTime >= timeToDie && manager.GetComponent<Manager>().GetDeaths() < 3)
+        {
             Move();
-            manager.GetComponent<Manager>().AddDeaths();
+            manager.GetComponent<Manager>().AddDeath();
+            elapsedTime = 0f;
         }
     }
 
-
-    private void Move()
+    void Move()
     {
-        gameObject.transform.position = new Vector3(UnityEngine.Random.Range(-6f, 6f), transform.position.y, transform.position.z); elaspedTime = 0;
-    }
+        if (manager.GetComponent<Manager>().IsGameOver())
+            return;
 
+        transform.position = new Vector3(
+            UnityEngine.Random.Range(-4.25f, 4.25f),
+            UnityEngine.Random.Range(-4.25f, 4.0f),
+            transform.position.z
+        );
+        elapsedTime = 0f;
+    }
 
     private void OnMouseDown()
     {
+        if (manager.GetComponent<Manager>().IsGameOver())
+            return;
+
         Move();
         manager.GetComponent<Manager>().AddPoints(points);
     }

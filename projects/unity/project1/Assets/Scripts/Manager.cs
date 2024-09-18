@@ -1,56 +1,74 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
-
-    [SerializeField] GameObject skull1;
-    [SerializeField] GameObject skull2;
-    [SerializeField] GameObject skull3;
-
+    [SerializeField] GameObject[] skulls;
+    [SerializeField] GameObject circle;
     [SerializeField] GameObject triangle;
     [SerializeField] GameObject square;
-    [SerializeField] GameObject circle;
-
     [SerializeField] Text scoreText;
+    [SerializeField] Text endGameText;
 
     private int score = 0;
-    private int death = 0;
+    private int deaths = 0;
+    private bool gameOver = false;
 
-    // Start is called before the first frame update
     void Start()
     {
-        skull1.GetComponent<SpriteRenderer>().enabled = false;
-        skull2.GetComponent<SpriteRenderer>().enabled = false;
-        skull3.GetComponent<SpriteRenderer>().enabled = false;
-
+        ResetGame();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (deaths >= 3 && !gameOver)
+        {
+            gameOver = true;
+            endGameText.text = "Game Over!\nYou scored " + score + " points!";
+            endGameText.enabled = true;
+        }
+
+        if (gameOver && Input.GetKeyDown(KeyCode.R))
+        {
+            ResetGame();
+        }
     }
 
-    public void AddPoints(int points)
+    public void ResetGame()
     {
-        score += points;
+        gameOver = false;
+        deaths = 0;
         scoreText.text = "Score: " + score;
+        endGameText.enabled = false;
 
+        foreach (var skull in skulls)
+        {
+            skull.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        circle.transform.position = new Vector3(-4.4f, 2.5f, 0f);
+        square.transform.position = new Vector3(-4.3f, 0.09f, 0f);
+        triangle.transform.position = new Vector3(2.7f, 0.3f, 0f);
+
+        scoreText.text = "Score: " + score;
     }
 
-    public void AddDeaths()
+    public void AddPoints(int pts)
     {
-        death++;
-
-        if (death == 1)
-            skull1.GetComponent<SpriteRenderer>().enabled = true;
-        if (death == 2)
-            skull2.GetComponent<SpriteRenderer>().enabled = true;
-        if (death == 3)
-            skull3.GetComponent<SpriteRenderer>().enabled = true;
+        if (gameOver) return;
+        score += pts;
+        scoreText.text = "Score: " + score;
     }
+
+    public void AddDeath()
+    {
+        if (gameOver) return;
+        deaths += 1;
+        skulls[deaths - 1].GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    public int GetDeaths() { return deaths; }
+    public int GetScore() { return score; }
+    public bool IsGameOver() { return gameOver; }
 }
