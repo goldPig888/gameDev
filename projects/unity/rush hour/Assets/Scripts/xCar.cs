@@ -5,25 +5,27 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    private Manager manager;
+    private Manager gameManager;
     // Start is called before the first frame update
     void Start()
     {
-        manager = FindObjectOfType<Manager>();
+        gameManager = FindObjectOfType<Manager>();
+        
         
     }
 
     private void OnMouseDown()
     {
-        manager.OnVehicleClick();
-        //send the point coords
-        //send whether it is a top/bottom/left/right bounding box that is clicked on
-        
+        Vector2 coords = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+
+        //make diff box colliders for top bottom left right
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         
     }
 }
