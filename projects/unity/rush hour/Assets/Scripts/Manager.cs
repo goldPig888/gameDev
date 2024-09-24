@@ -38,34 +38,25 @@ public class Manager : MonoBehaviour
     }
 
 
-    public void MoveUp()
-    {
-        //check to see if the move is valid
-        //add in y
+// the up down right left can be simplified with a parameter changing the vector of transformation just by move
 
+    public void Move(Vector3 direction) {
+        Vector3 newPosition = transform.position + direction; 
+        if (IsValid(newPosition))
+        {
+            transform.position = newPosition;
+        }
     }
 
-    public void MoveDown()
+    public bool IsValid(Vector3 position)
     {
-        //check to see if the move is valid
-        // subtract in y
-
-    }
-    public void MoveRight()
-    {
-        //check to see if the move is valid
-        //add in x
-    }
-    public void MoveLeft()
-    {
-        //check to see if the move is valid
-        //subtract in x
-    }
-
-    public void IsValid()
-    {
+        float range = 3f;
+        if (position.magnitude > range)
+            return false;
+        if (Collider2D[] colliders == Physics2D.OverlapCircleAll(transform.position, range)) { }
         //1. we don't hit any walls
-        //2. we don't hit any other cars (distance between them can't be < one square) check on the canvas
+
+        //2. we don't hit any other cars (distance between them can't be < one square) check on the canvas number to be determined
 
     }
 

@@ -11,23 +11,24 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         gameManager = FindObjectOfType<Manager>();
-        
-        
+
+
     }
 
     private void OnMouseDown()
     {
         Vector2 coords = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 center = GetSpriteCenter();
-        if (coords.x > center.x)
+        if (coords.y > center.y)
         {
-            gameManager.moveRight();
+            
         }
-        else if (coords.x < center.x) {
+        else if (coords.y < center.y)
         {
+            {
 
+            }
         }
-    }
 
     private Vector2 GetSpriteCenter()
     {
@@ -42,6 +43,6 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
 
-        
+
     }
 }
